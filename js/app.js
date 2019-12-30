@@ -118,7 +118,6 @@ $(function() {
      */
     feedList.on('click', 'a', function() {
         var item = $(this);
-
         $('body').addClass('menu-hidden');
         loadFeed(item.data('id'));
         return false;
@@ -130,4 +129,5 @@ $(function() {
     menuIcon.on('click', function() {
         $('body').toggleClass('menu-hidden');
     });
+
 }());
